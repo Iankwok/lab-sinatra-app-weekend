@@ -1,0 +1,18 @@
+<h2>Edit Scotch</h2>
+
+<form action="/scotches/<%= @scotch.id %>/update" method="POST" class='scotch' id="edit-scotch">
+  <!-- <input type="hidden" name="_method" value="put"> -->
+  <div>
+    <label for="scotch[name]">Name:</label>
+    <input name="scotch[name]" value="<%= @scotch.name %>">
+  </div>
+
+  <div>
+    <label for="scotch[year]">Year:</label>
+    <input name="scotch[year]" value="<%= @scotch.year %>">
+  </div>
+
+  <div>
+    <input type="submit" value="Save Scotch" class='btn'>
+  </div>
+</form>
