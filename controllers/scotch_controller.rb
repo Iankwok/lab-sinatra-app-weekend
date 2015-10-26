@@ -1,6 +1,6 @@
 class ScotchesApp < Sinatra::Base
 
-    # index
+  # index
   get '/scotches' do
     @scotches = Scotch.all
     erb(:"scotches/index")

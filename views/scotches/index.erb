@@ -4,7 +4,7 @@
   <% @scotches.each do |scotch| %>
     <li>
       <strong>
-        <a href="/scotches/<%= scotch.id %>"><%= scotch.name %><%= scotch.year %></a>
+        <a href="/scotches/<%= scotch.id %>"><%= scotch.name %>(<%= scotch.year %>)<%= scotch.blended %></a>
       </strong>
 
       <a href="/scotches/<%= scotch.id %>/edit">
